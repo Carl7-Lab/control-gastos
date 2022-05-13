@@ -1,4 +1,5 @@
 import NuevoPresupuesto from "./NuevoPresupuesto"
+import ControlPresupuesto from "./ControlPresupuesto"
 
 function Header({
   presupuesto,
@@ -10,7 +11,9 @@ function Header({
     <header>
       <h1>Planificador de Gastos</h1>
       {isValidPresupuesto ? (
-        <p>Control de Presupuesto</p>
+        <ControlPresupuesto
+          presupuesto={presupuesto}
+        />
       ) : (
         <NuevoPresupuesto
           presupuesto={presupuesto}
