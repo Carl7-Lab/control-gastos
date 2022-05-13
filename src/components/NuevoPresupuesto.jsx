@@ -25,7 +25,7 @@ function NuevoPresupuesto({presupuesto, setPresupuesto, setIsValidPresupuesto}) 
             type="number"
             placeholder="Añade tu presupuesto"
             value={presupuesto}
-            onChange={ e => setPresupuesto(e.target.value)}
+            onChange={ e => setPresupuesto(Number(e.target.value))}
           />
         </div>
         <input type="submit" value="Añadir" />
